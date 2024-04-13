@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 /* box-level */{
+
+            /*
+                Como o <h1> é box-level, ele possui um parâmetro por padrão que o define como box:
+
+                display: block;
+            */
+            background-color: rgb(224, 145, 145);
+            height: 300px;
+            width: 300px; 
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            /* Usando o shorthand, na mesma ordem: 
+
+                border: 10px solid black;
+
+            */
+
+            padding: 10px 20px 30px;
+            /* Usando o shorthand, na mesma ordem:
+
+                padding: 10px 10px 10px 10px;
+
+                -> Se todos os valores forem iguais, como é o caso acima, basta informar o valor uma vez só:
+
+                padding 10px;  
+
+                -> Será aplicado 10px para todos os lados.
+
+
+                -> Caso existirem dois valores, eles são espelhados em seus opostos (left - right / top - bottom):
+
+                padding 10px 20px;
+
+                Top = 10px
+                right = 20px
+                bottom = 10px
+                left = 20px
+
+            */
+
+            margin-top: 30px;
+            margin-right: 10px;
+            margin-bottom: 80px;
+            margin-left: 10px;
+            /* Usando o shorthand, na mesma ordem:
+
+                margin: 30px 10px 80px 10px;
+                
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: black;
+            /* Usando o shorthand, na mesma ordem:
+
+                outline: 5px dashed black;
+                
+            */
+        }
+
+        a /* inline-level */ {
+
+            /*
+                Como o <a> é inline-level, ele possui um parâmetro por padrão que o define como inline:
+
+                display: inline;
+            */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+        Parágrafos também são exemplos de box-level. mas os <a href="#"> <!-- usei um # para deixar o link valido--> links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.
+    </p>
+</body>
+</html>

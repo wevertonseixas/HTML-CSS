@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(89, 203, 233);
+        }
+
+        header {
+            background-color: rgb(56, 148, 171);
+            padding: 15px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(89, 203, 233);
+            padding: 8px 5px;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(56, 148, 171);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            color: black;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 14px 0px;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.315);
+        }
+
+        article {
+            background-color: rgb(224, 225, 221);
+            padding: 8px 30px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(188, 188, 188);
+            padding: 5px 8px;
+            border-radius: 5px;
+        }
+
+        aside > p {
+            margin: 0px;
+        }
+
+        p {
+            text-indent: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 20px 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            /* Fazendo uma bola em CSS*/
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos do momento</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum suscipit non officia, perferendis illo quia accusamus nesciunt ab cumque similique possimus necessitatibus aliquid eos molestiae labore recusandae! A, illo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fuga delectus ut ducimus vitae cum deleniti harum illum similique odio corporis ad aliquam eveniet animi, sint eos nisi iusto modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore neque atque perferendis. Quos porro nesciunt error, doloremque sint qui, velit aperiam officia amet animi eum maiores quia ea? Porro!</p>
+            <article>
+                <h2>Sub-assuntos</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores porro delectus hic voluptas ullam. Voluptatibus cumque quaerat quas ratione et neque culpa iusto voluptates sint adipisci. Blanditiis eum optio hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ullam autem aperiam odio, vel officia ab nesciunt accusamus suscipit placeat reiciendis aliquid veritatis atque temporibus laborum, facere beatae cumque impedit.
+                </p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum accusamus, laborum vel quo exercitationem eveniet, optio iusto et dignissimos adipisci accusantium possimus molestias, sunt illo fugit nihil reiciendis officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat nobis, optio voluptate beatae esse quia quos rerum perferendis animi cumque quibusdam veniam molestias, saepe nihil incidunt nulla aperiam totam?
+                </p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

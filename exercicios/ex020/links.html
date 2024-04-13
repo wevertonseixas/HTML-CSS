@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            /*Quando o link já foi visitado*/
+            color: darkred;
+        }
+
+        a:hover {
+            /*Quando o mouse é passado em cima*/
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            /*Quando é clicado e segurado*/
+            color: teal;
+        }
+
+        a::before{
+            /*Coloca algo para aparecer antes do conteúdo do <a>*/
+           content: '>'; 
+           text-decoration: none;
+           font-weight: normal;
+           color: black;
+        }
+
+        a::after{
+            /*Coloca algo para aparecer depois do conteúdo do <a>*/
+           content: '<'; 
+           text-decoration: none;
+           font-weight: normal;
+           color: black;
+        }
+
+        .upperc::first-letter {
+            /*Modifica a primeira letra do elemento referenciado*/
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo/videos">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Vídeo</a></li>
+    </ul>
+    <p class="upperc">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur exercitationem, quia delectus dolore dolorum aut. Vel dolore alias, quo nihil nemo tempore saepe rem dolorum sit, iste adipisci sequi cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non vero praesentium enim, ducimus sunt iure doloremque pariatur est commodi, ipsum itaque hic ex libero consequatur ullam quo, iste excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laboriosam placeat, voluptates esse debitis perferendis, eveniet in excepturi cumque autem deleniti repellendus laudantium dignissimos saepe cum. Accusamus quae dicta tempore?
+    </p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível e Áudio</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Esta imagem possui diversos tamanhos, aumente e diminua o tamanho do navegador para ver. &#x1F60A
+    </p>
+    <!-- Utilizando o min-width -->
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imgs/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imgs/foto-m.png" type="image/png">
+        <img src="imgs/foto-p.png" alt="Foto flexível min">
+    </picture>
+    <!-- Utilizando o max-width -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/foto-m.png" type="image/png">
+        <img src="imgs/foto-g.png" alt="Foto flexível max">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos reproduzir alguns áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <p>
+            Infelizmente seu navegador não reporduz áudio <a href="midia/guanacast-33.mp3">Clique aqui para baixar o áudio.</a>
+        </p>
+    </audio>
+</body>
+</html>

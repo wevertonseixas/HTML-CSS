@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Work Sans', Helvetica, sans-serif;
+            font-size: 1em;
+            /*
+            Medidas Absolutas:
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %
+
+            16px geralmente é igual a 1em
+            */
+            font-weight: normal;
+            /* lighter normal bold bolder*/
+
+            font-style: normal;
+            text-decoration: underline;
+        }
+        h1, h2{
+            /* Para aplicar as configurações acima de maneira mais simples, utilizamos o shorthand font */
+
+            font: italic bolder 2em 'Work Sans', sans-serif;
+            /* Segue a seguinte ordem
+            font-style -> font-weight -> font-size -> font-family
+            */
+        }
+
+        /* Acima temos um exemplo de herança em HTML, onde os atributos de h1 e h2 herdam do body e podem ser sobescritos */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nesciunt amet? Consectetur, facere! Officiis autem, ad nulla consequatur dicta nemo, vero vel ullam tempora sequi numquam. Veniam corrupti in autem?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, illum. Ad dolores ut delectus ipsum. Ratione sequi ullam at quasi ut, dicta facilis, laudantium eveniet, dolorum sit distinctio. Nesciunt, vero! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quas accusantium exercitationem saepe unde esse, quae totam labore repellendus qui velit ipsam dicta, ducimus explicabo quaerat cumque eaque? Hic, a?
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro numquam molestiae ab rem consequatur obcaecati nihil vero officiis ut velit voluptates, temporibus tenetur delectus architecto! Nemo nisi tempore officia architecto.
+    </p>
+</body>
+</html>
