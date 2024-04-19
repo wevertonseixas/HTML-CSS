@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de fundo</title>
+    <style>
+
+        body {
+            background-image: url(imgs/wallpaper001.jpg);
+        }
+
+        div#main {
+            text-align: center;
+        }
+
+        div.redondo{
+            display: inline-block;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        div.quadrado {
+            display: inline-block;
+            border: 3px solid black;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        div#r1 { /*Cor de fundo básica*/
+            background-color: aqua;
+        }
+        
+        div#r2 { /*Cor de fundo gradiente*/
+            background-image: linear-gradient(to bottom, yellow, lightcoral);
+        }
+
+        div#r3 { /*Imagem de fundo*/
+            background-image: url(imgs/wallpaper002.jpg)
+        }
+
+        div#q1 {
+            background-image: url(imgs/pattern003.png);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="redondo" id="r1">
+
+        </div>
+        <div class="redondo" id="r2">
+    
+        </div>
+        <div class="redondo" id="r3">
+    
+        </div> <br>
+        <div class="quadrado" id="q1">
+
+        </div>
+    </div>
+</body>
+</html>
