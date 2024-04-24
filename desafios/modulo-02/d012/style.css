@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Alegrey';
+    src: url(fonts/AlegreyaSansSC-Black.ttf) format(truetype);
+}
+
+:root {
+    --fonte-tit: 'Alegrey', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    min-height: 23vh;
+}
+
+header > h1 {
+    font-size: 8vw;
+    font-family: var(--fonte-tit);
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-bottom: 50px;
+}
+
+section {
+    margin-left: 40px;
+    margin-top: 67px;
+    min-width: 20vw;
+}
+
+article {
+    font-size: 3.2vw;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 7.1vw;
+}
